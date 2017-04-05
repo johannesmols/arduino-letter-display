@@ -9,6 +9,8 @@ int pin9 = 9; //upper right
 
 //String to display
 char input[] = "1337";
+int onTime = 1000;
+int offTime = 500;
 int waitBetweenWordLoops = 1000;
 
 void setup() {
@@ -25,7 +27,7 @@ void setup() {
 
 void runInput() {
 	for(int i = 0; i < sizeof(input) - 1; i++) {
-		sortInput(input[i], 1000, 500); //1000ms = default time for display of one letter; 500ms = default time for pause between two letters
+		sortInput(input[i], onTime, offTime); //1000ms = default time for display of one letter; 500ms = default time for pause between two letters
 	}
 	//delay when one word has finished, optional
 	delay(waitBetweenWordLoops);
