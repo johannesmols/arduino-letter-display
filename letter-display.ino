@@ -152,8 +152,7 @@ void sortInput(char letter, int onTime, int offTime) {
 	}
 }  
 
-void loop()
-{
+void loop()	{
 	//Write this in loop() to let it repeat endlessly, write this in setup() to only run it once
 	runInput();
 }
