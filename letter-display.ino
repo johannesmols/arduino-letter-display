@@ -7,11 +7,10 @@ int pin7 = 7; //Dot
 int pin8 = 8; //upper horizontal
 int pin9 = 9; //upper right
 
-//String to display
-char input[] = "1337";
-int onTime = 1000;
-int offTime = 500;
-int waitBetweenWordLoops = 1000;
+char input[] = "1337"; //String to display
+int onTime = 1000; //Time in which the display shows a letter
+int offTime = 500; //Pause between letters
+int waitBetweenWordLoops = 1000; //Pause between complete runs of the input
 
 void setup() {
 	//Set up pins as output
